@@ -12,7 +12,7 @@ module.exports = function(content) {
   var config = loaderUtils.getLoaderConfig(this, "krakenio") || {};
 
   if(!config.api_key || !config.api_secret) {
-    callback('no kraken.io auth setting presented');
+    callback(new Error('No kraken.io auth setting presented'));
     return content;
   }
 
