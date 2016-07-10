@@ -1,4 +1,4 @@
-Webpack loader that compress images via [kraken.io](kraken.io)  service.
+Webpack loader that compress images via [kraken.io](http://kraken.io)  service.
 
 #Install
 ```
@@ -15,7 +15,7 @@ Add `krakenio` section to your webpack config.
   }
 }
 ```
-Add loader. Full list of options you can find in [https://kraken.io/docs/getting-started](documentation). 
+Add loader. Full list of options you can find at [documentation](https://kraken.io/docs/getting-started). 
 ```
 {
   test: /\.(png|jpg|jpeg)$/,
