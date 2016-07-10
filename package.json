@@ -1,13 +1,20 @@
 {
   "name": "webpack-krakenio-loader",
   "version": "0.0.1",
-  "description": "",
+  "description": "Webpack loader, that compess image via kraken.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "KuKKoMaH",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuKKoMaH/webpack-krakenio-loader/issues"
+  },
+  "homepage": "https://github.com/KuKKoMaH/webpack-krakenio-loader",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuKKoMaH/webpack-krakenio-loader.git"
+  },
   "dependencies": {
     "loader-utils": "^0.2.15",
     "request": "^2.72.0"
