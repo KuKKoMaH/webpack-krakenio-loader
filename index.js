@@ -8,7 +8,7 @@ module.exports = function(content) {
 
   if(!callback) return content;
 
-  var query = loaderUtils.parseQuery(this.query);
+  var query = loaderUtils.getOptions(this);
   var config = loaderUtils.getLoaderConfig(this, "krakenio") || {};
 
   if(!query.auth) {
