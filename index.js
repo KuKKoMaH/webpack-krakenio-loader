@@ -11,16 +11,10 @@ module.exports = function(content) {
   var query = loaderUtils.parseQuery(this.query);
   var config = loaderUtils.getLoaderConfig(this, "krakenio") || {};
 
-  if(!config.api_key || !config.api_secret) {
+  if(!query.auth) {
     callback(new Error('No kraken.io auth setting presented'));
     return content;
   }
-
-  query.auth = {
-    api_key: config.api_key,
-    api_secret: config.api_secret
-  };
-  query.wait = true;
 
   var formData = {
     data: JSON.stringify(query),
