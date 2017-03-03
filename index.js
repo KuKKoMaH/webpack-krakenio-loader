@@ -9,7 +9,6 @@ module.exports = function(content) {
   if(!callback) return content;
 
   var query = loaderUtils.getOptions(this);
-  var config = loaderUtils.getLoaderConfig(this, "krakenio") || {};
 
   if(!query.auth) {
     callback(new Error('No kraken.io auth setting presented'));
