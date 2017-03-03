@@ -16,7 +16,7 @@
     "url": "git+https://github.com/KuKKoMaH/webpack-krakenio-loader.git"
   },
   "dependencies": {
-    "loader-utils": "^0.2.15",
+    "loader-utils": "^1.0.2",
     "request": "^2.72.0"
   }
 }
